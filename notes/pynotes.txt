@@ -1,0 +1,17 @@
+To bypass the script activate
+----------------------------------
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+
+set environment VSCode
+----------------
+In VS Code, press Ctrl+Shift+P → type Python: Select Interpreter.
+
+To remove vir environment
+--------------------------
+
+
+Preparation
+------------
+1.python -m venv myvenv1
+2.Activate virtual environment: myvenv1\Scripts\activate
