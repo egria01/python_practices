@@ -25,7 +25,11 @@ git branch -M main
 git remote add origin https://github.com/egria01/python_practices.git
 git push -u origin main
 
-# Created by venv; see https://docs.python.org/3/library/venv.html
+GITHub update
+------------------
+git add .
+git commit -m "your comment"
+git push
 
 in myvenv1 .gitignore list exclusion
 --------------------------
