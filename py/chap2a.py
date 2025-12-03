@@ -38,10 +38,16 @@ andautomation. The syntax is clean and readable.This makes Python perfect for
 
 import re
 print(text)
-text_count_character=len(text.strip())    # Length without leading/trailing whitespace
+# wrong text_count_character=len(text.strip())    # Length without leading/trailing whitespace
+text_count_character=len(text.split())    # Length without leading/trailing whitespace
+
 text_count_character_spaces=(len(text))    # Length with whitespace
 text_count_words=len(re.findall("[a-zA-Z_]+", text))
 text_count_sentences=len(re.findall("[.!?]+", text))
+
+
+
+
 
 print("1) "+text)
 print("Character count (with spaces):", text_count_character_spaces)
@@ -49,3 +55,14 @@ print("2) "+text.strip())
 print("Character count (no spaces):", text_count_character)
 print("Word count:", text_count_words)
 print("Sentence count:", text_count_sentences)
+
+
+#char_count = len(text)
+#char_count_no_spaces = len(text.replace(' ', ''))
+#word_count = len(text.split())
+#sentence_count = text.count('.') + text.count('!') + text.count('?')
+
+#print(f"Character count (including spaces): {char_count}") # 239
+#print(f"Character count (excluding spaces): {char_count_no_spaces}")  # 204
+#print(f"Word count: {word_count}")                                    # 38
+#print(f"Sentence count: {sentence_count}")                            # 5
